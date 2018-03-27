@@ -1,0 +1,184 @@
+<HTML>
+<HEAD>
+<TITLE>
+
+</TITLE>
+<style type="text/css">
+body{background-image: url("background1.jpg");
+}
+#header {
+    background-color:;
+    color:white;
+    text-align:center;
+    padding:3px;
+}
+#nav {
+    line-height:30px;
+    
+    color:black;
+    height:100px;
+    width:100px;
+    float:left;
+    padding:5px;
+}
+#section {
+    width:350px;
+    float:left;
+    font-weight:bold;
+    padding:10px;
+}
+</style>
+
+</HEAD>
+<BODY >
+<div id="header">
+<table cellspacing="60">
+<tr>
+<td style=" font-size:15pt;" ><a href="Homepage.html">Homepage</a></td>
+<td>|</td>
+<td style=" font-size:15pt;" ><a href="Order.html">Order</a></td>
+<td>|</td>
+<td style=" font-size:15pt;"><a href="Contact.html">Contact</a></td>
+<td style="font-size:25pt; font-family: Calligrapher, Magneto;;">Alpha's Bakery</a></td>
+<td>|</td>
+<td style=" font-size:15pt;"><a href="Information .html">Information</a></td>
+</table>
+</div>
+
+<div id="nav">
+<h2 style"font-family:Copperplate;">THE BEST BAKERY IN TOWN </h2>
+</div>
+<div id="section">
+If your order is $50-100 then you get a 10% discount,if your order is $101-$150 then you get a 20% discount, if your order is above $150 it is a 25% discount. Taxes are 4%.
+
+</br>
+<fieldset><legend><h1>Cake Order Form</h1></legend>
+Name <input type="text" name="name">
+</br>
+Phone number<input type="text" name="phone number"> 
+</br>
+Email Address <input type="text" name="email address">  
+</br>
+Pickup Date  <input type="text">
+</br>
+<script type="text/javascript">
+	function checkTotal() {
+		document.listForm.total.value = '';
+		var sum = 0;
+		for (i=0;i<document.listForm.choice.length;i++) {
+		  if (document.listForm.choice[i].checked) {
+		  	sum = sum + parseInt(document.listForm.choice[i].value);}}
+		  
+if (sum >50 < 101)
+{sum=sum-(100*10/100);}
+	
+else		
+if (sum >101 <151)
+{sum=sum-(100*20/100);}
+		
+else
+
+if (sum >150 )
+{sum=sum-(100*25/100);}
+
+sum=sum+(100*4/100);
+               
+document.listForm.total.value = sum;
+	}
+
+</script>
+
+<form name="listForm">
+</br>
+Please select the items you would like to purchase 
+</br>
+<input type = "checkbox" name = "choice" value = "29.99" onchange="checkTotal()"/>French Sponge Crumb choice Price:$29.99 
+</br>
+<input type = "checkbox" name = "choice" value = "29.99" onchange="checkTotal()"/>Plain Pound choice Price:$29.99
+</br>
+<input type = "checkbox" name = "choice" value = "29.99" onchange="checkTotal()"/>Marble Pound choice Price:$29.99
+</br>
+<input type = "checkbox" name = "choice" value = "29.99" onchange="checkTotal()"/>Banana Nut Pound choice Price:$29.99
+</br>
+<input type = "checkbox" name = "choice" value = "22.00" onchange="checkTotal()"/>Variety Pack of Pound choices Price:$22.00
+</br>
+<input type = "checkbox" name = "choice" value = "32.00" onchange="checkTotal()"/>Vanilla choice Price:$32.00
+</br>
+Trays
+</br>
+<input type = "checkbox" name = "choice" value = "45.00" onchange="checkTotal()"/>2lb Rugelach Tray Price:$45.00
+</br>
+<input type = "checkbox" name = "choice" value = "33.95" onchange="checkTotal()"/>2lb Butter Cookie Tray Price:$33.95 
+</br>
+<input type = "checkbox" name = "choice" value = "45.00" onchange="checkTotal()"/>2lb Biscotti Tray Price:$45.00
+</br>
+<input type = "checkbox" name = "choice" value = "25.00" onchange="checkTotal()"/>Breakfast Tray Price:$25.00
+</br>
+<input type = "checkbox" name = "choice" value = "30.00" onchange="checkTotal()"/>Assorted Pastry Tray Price:$30.00
+</br>
+<input type = "checkbox" name = "choice" value = "30.00" onchange="checkTotal()"/>Cannoli Tray Price:$30.00
+</br>
+<input type = "checkbox" name = "choice" value = "20.00" onchange="checkTotal()"/>Lobster Tail Tray Price:$20.00
+</br>
+<input type = "checkbox" name = "choice" value = "20.00" onchange="checkTotal()"/>Assorted Cookie Tray Price:$20.00
+</br>
+Breads
+</br>
+<input type = "checkbox" name = "choice" value = "25.00" onchange="checkTotal()"/>Potato Wheat Bread Price:$25.00
+</br>
+<input type = "checkbox" name = "choice" value = "25.00" onchange="checkTotal()"/>Potato Wheat Bread Price:$25.00
+</br>
+<input type = "checkbox" name = "choice" value = "35.00" onchange="checkTotal()"/>Zuri Bread Price:$35.00
+</br>
+<input type = "checkbox" name = "choice" value = "20.00" onchange="checkTotal()"/>Baguette Price:$20.00
+</br>
+<input type = "checkbox" name = "choice" value = "25.00" onchange="checkTotal()"/>Snowflake Roll Price:$25.00
+</br>
+<input type = "checkbox" name = "choice" value = "20.00" onchange="checkTotal()"/>Laugen Roll Price:$20.00
+</br>
+<input type = "checkbox" name = "choice" value = "25.00" onchange="checkTotal()"/>Suisse Boule Price:$25.00
+</br>
+</br>
+<p style"font-weight:bold">Special</br> 
+<input type = "checkbox" name = "choice" value = "25.00" onchange="checkTotal()"/>Include Inscriptions Price:$25.00. Enter Inscription in box <input type="text">
+</br>
+</br>
+Frostings
+</br>
+<input type = "checkbox" name = "choice" value = "5.00" onchange="checkTotal()"/>Butter Cream Frosting $5
+</br>
+<input type = "checkbox" name = "choice" value = "0.00" onchange="checkTotal()"/> Frosting $0
+</br>
+<input type = "checkbox" name = "choice" value = "10.00" onchange="checkTotal()"/> Royal Frosting $10
+</br>
+<input type = "checkbox" name = "choice" value = "5.00" onchange="checkTotal()"/> Marzipan Frosting $5
+</br>
+<input type = "checkbox" name = "choice" value = "7.00" onchange="checkTotal()"/> Sugar paste Frosting $7
+</br>
+</br>
+*Filling is free*
+<select name="choice">
+<option value="0">Select Filling Free</option>
+<option value="5">Lemon </option>
+<option value="5">Custard </option>
+<option value="7">Fudge </option>
+<option value="8">Mocha </option>
+<option value="10">Raspberry </option>
+</select>
+</br>
+</br>
+Comments/any extras </br><textarea name="comments" cols="20" ></textarea>
+</br>
+
+
+
+</br>
+Total: <input type="text" size="2" name="total" value="0"/>
+</form>
+<a href="submit.html"><input type="button" value="Submit"></a>
+</div>
+</fieldset>
+
+
+</Body>
+</HTML>
